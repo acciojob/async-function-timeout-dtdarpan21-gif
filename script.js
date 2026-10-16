@@ -4,15 +4,15 @@ const delayInput = document.getElementById("delay");
 const btn = document.getElementById("btn");
 const output = document.getElementById("output");
 
-function wait(ms)
+function wait(ms){
 return new Promise(resolve => setTimeout(resolve , ms));
 }
-btn.addEventListener( "click" , asyncfunction(e));
+btn.addEventListener( "click" , asyncfunction(event);
 	event.preventDefault();
 
 const message = textInput.value;
 const delay = Number(delayInput.value);
 
-await(wait)delay;
+await (wait)delay;
 output.textContent = message;
 });
