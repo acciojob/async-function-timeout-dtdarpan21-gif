@@ -1,18 +1,20 @@
-//your JS code here. If required.
+
 const textInput = document.getElementById("text");
 const delayInput = document.getElementById("delay");
 const btn = document.getElementById("btn");
 const output = document.getElementById("output");
 
-function wait(ms){
-return new Promise(resolve => setTimeout(resolve , ms));
+function wait(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
-btn.addEventListener( "click" , asyncfunction(event);
-	event.preventDefault();
 
-const message = textInput.value;
-const delay = Number(delayInput.value);
+btn.addEventListener("click", async function (event) {
+    event.preventDefault();
 
-await (wait)delay;
-output.textContent = message;
+    const message = textInput.value;
+    const delay = Number(delayInput.value);
+
+    await wait(delay);
+
+    output.textContent = message;
 });
